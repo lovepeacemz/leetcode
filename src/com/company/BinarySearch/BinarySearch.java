@@ -167,6 +167,20 @@ public class BinarySearch {
         return isEqual ? index : l;
     }
 
+    //返回左侧没有重复元素最小值
+    public static int findMin(int[] array){
+        int l = 0, r = array.length;
+        while(l < r){
+            int mid = l + (r - l) / 2;
+            if(array[mid] > array[r]){
+                l = mid + 1;
+            }else{
+                r = mid;
+            }
+        }
+        return l;
+    }
+
     public static void main(String[] args) {
         int[] array = new int[]{1, 10, 34, 100, 102, 204, 305};
         int[] ratioArray= new int[]{34, 100, 102, 204, 305, 1, 10, 12, 13, 14};

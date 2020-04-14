@@ -35,7 +35,6 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        Integer i = 0;
         Set<Long> set  = new HashSet(3000000);
         System.out.println(System.currentTimeMillis());
         long start = System.currentTimeMillis();

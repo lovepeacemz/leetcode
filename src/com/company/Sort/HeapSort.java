@@ -41,7 +41,7 @@ public class HeapSort {
                 break;
             }
         }
-        // 如果有左孩子，则左孩子和父节点比较
+        // 如果只有左孩子，则左孩子和父节点比较
         if (2 * i + 1 < h) {
             if (array[i] < array[2 * i + 1]) {
                 swap(array, i, 2 * i + 1);
